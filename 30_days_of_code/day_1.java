@@ -12,7 +12,8 @@ public class Solution {
 
         int new_i = scan.nextInt();
         double new_d = scan.nextDouble();
-        String new_s = scan.next() + scan.nextLine();
+		scan.nextLine(); // read the rest of the line of input (newline character after the double token).
+        String new_s = scan.nextLine();
 
         scan.close();
         System.out.println(i + new_i);
